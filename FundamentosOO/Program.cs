@@ -24,43 +24,66 @@ internal class Program
         //livro3.Editora = "Minha Editora";
         //livro3.Autor = "Cristiano de Paula";
         //livro3.AnoLancamento = 2000;
+        /*
+                Aluno aluno1 = new Aluno();
 
-        Aluno aluno1 = new Aluno();
+                aluno1.Nome = "Tiago Pereira";
+                aluno1.RM = "1234TI";
+                aluno1.Email = "tiago.p.duarte@aluno.senai.br";
+                aluno1.Nascimento = new DateOnly(2008, 02, 18);
 
-        aluno1.Nome = "Tiago Pereira";
-        aluno1.RM = "1234TI";
-        aluno1.Email = "tiago.p.duarte@aluno.senai.br";
-        aluno1.Nascimento = new DateOnly(2008, 02, 18);
+                Console.WriteLine("Aluno1");
+                Console.WriteLine("Nome : " + aluno1.Nome);
+                Console.WriteLine("====================================");
 
-        Console.WriteLine("Aluno1");
-        Console.WriteLine("Nome : " + aluno1.Nome);
-        Console.WriteLine("====================================");
+                Produto p1 = new Produto();
+                p1.Nome = "Coca-Cola 2 Litros";
+                p1.Codigo = 123456;
+                p1.Preco = 12.99;
+                p1.Estoque = 96;
 
-        Produto p1 = new Produto();
-        p1.Nome = "Coca-Cola 2 Litros";
-        p1.Codigo = 123456;
-        p1.Preco = 12.99;
-        p1.Estoque = 96;
+                p1.QuantidadeEstoque();
+                p1.Estoque = 85;
+                p1.QuantidadeEstoque();
+                Console.WriteLine("====================================");
+                Console.WriteLine();
 
-        p1.QuantidadeEstoque();
-        p1.Estoque = 85;
-        p1.QuantidadeEstoque();
+                Carro carro1 = new Carro();
+                carro1.Marca = "Ferrari";
+                carro1.Modelo = "488";
+                carro1.Velocidade = 80;
+
+                carro1.Acelerar();
+                carro1.Acelerar();
+                carro1.Acelerar();
+                carro1.Desacelerar();
+            */
         Console.WriteLine("====================================");
         Console.WriteLine();
 
-        Carro carro1 = new Carro();
-        carro1.Marca = "Ferrari";
-        carro1.Modelo = "488";
-        carro1.Velocidade = 80;
+        Mago merlin = new Mago();
+        merlin.Nome = "Mago Merlin";
+        merlin.Vida = 100;
+        merlin.Inteligencia = 87;
+        merlin.Agilidade = 55;
+        merlin.Forca = 62;
+        merlin.Nivel = 1;
 
-        carro1.Acelerar();
-        carro1.Acelerar();
-        carro1.Acelerar();
-        carro1.Desacelerar();
+        Elfo elfo = new Elfo();
+        elfo.Nome = "Julius";
+        elfo.Vida = 100;
+        elfo.Inteligencia = 83;
+        elfo.Forca = 56;
+        elfo.Agilidade = 90;
+        elfo.Nivel = 1;
 
-        Console.WriteLine("====================================");
-        Console.WriteLine();
 
+        merlin.apresentarSe();
+        elfo.apresentarSe();
+
+        int ataque = merlin.atacar();
+        int defesa = merlin.defender();
+        Console.WriteLine("Força do Ataque: " + ataque);
+        Console.WriteLine("Força do Defesa: " + defesa);
     }
-
 }
