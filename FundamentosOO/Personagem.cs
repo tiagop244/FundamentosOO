@@ -38,6 +38,8 @@ namespace FundamentosOO
             }
             this.Vida = this.Vida - danoDeVida2;
             Console.WriteLine("Dano na Vida do Atacante em " + danoDeVida2);
+
+
             Console.WriteLine("O nível de vida do Atacante agora é " + this.Vida);
         }
     }
