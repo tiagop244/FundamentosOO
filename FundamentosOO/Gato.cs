@@ -10,7 +10,7 @@ namespace PrimeiroProjeto
     {
         public override void emitirSom()
         {
-            Console.WriteLine("Miau Miau")
+            Console.WriteLine("Miau Miau");
         }
     }
 }

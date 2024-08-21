@@ -4,17 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FundamentosOO
+namespace Fundamentos
 {
     public class Carro
     {
-        public string Marca { get; set; };
-        public string Modelo { get; set; };
-        public int Velocidade { get; set; };
+        // Atributos
+        public string Marca { get; set; }
+        public string Modelo { get; set; }
+        public int Velocidade { get; set; }
+        // Métodos
         public void Acelerar()
         {
-            this.Velocidade = +5
-                Console.WriteLine("A velocidade Atual é " + this.Velocidade + " km");
+            this.Velocidade += 5;
+            Console.WriteLine("A Velocidade Atual é " + this.Velocidade + " km/h");
+        }
+        public void Desacelerar()
+        {
+            this.Velocidade -= 5;
+            Console.WriteLine("A Velocidade Atual é " + this.Velocidade + " km/h");
         }
     }
 }

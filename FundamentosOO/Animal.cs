@@ -10,8 +10,8 @@ namespace PrimeiroProjeto
     {
         public string Especie { get; set; }
 
-        public override void emitirSom()
-     }
-    {
+        public abstract void emitirSom();
     }
+
 }
+

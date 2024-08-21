@@ -1,16 +1,17 @@
-﻿using System;
+﻿using PrimeiroProjeto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FundamentosOO
+namespace Fundamentos
 {
-    public class Galinha
+    public class Galinha : Animal
     {
         public override void emitirSom()
         {
-            Console.WriteLine("pó pó pó")
+            Console.WriteLine("Pó pó pó");
         }
     }
 }

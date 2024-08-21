@@ -4,18 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FundamentosOO
+namespace Fundamentos
 {
     public class Produto
     {
-        public int Estoque { get; set; };
-        public double Preco { get; set; };
-        public int Codigo { get; set; };
-        public string Nome { get; set; };
+        // Atributos
+        public int Codigo { get; set; }
+        public string Nome { get; set; }
+        public double Preco { get; set; }
+        public int Estoque { get; set; }
 
+        // Metodos
         public void QuantidadeEstoque()
         {
-            Console.WriteLine("A quantidade em estoque é: " + this.Estoque
+            Console.WriteLine("A quantidade em estoque é: " + this.Estoque);
         }
     }
 }
